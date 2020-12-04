@@ -1,10 +1,12 @@
 $containerWidth: 940px;
-$baseFontsize: 18px;
+$baseFontSize: 18px;
 
 // breakpoints//
 $tablets: 940px;
 $phones: 480px;
 
+@import "_media";
+@import "_layout";
 
 // colors//
 $blue: #61c4d9;
@@ -20,7 +22,7 @@ $z-fixed-menu:100;
 
 
 // components //
-@import "_layout";
+
 @import "_hero";
 @import "_header";
 @import "_menu";
@@ -39,9 +41,8 @@ $z-fixed-menu:100;
 @import "_radio";
 @import "_reviews-section";
 @import "_fixed-menu";
-@import "_body";
 @import "_section-map";
-@import "_media";
+
 
 
 
