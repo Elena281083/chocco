@@ -1,35 +1,37 @@
 .hero{
-  background:  url("../../images/sweets.png") left 87% center no-repeat, url("../../images/pattern.png") right bottom no-repeat;
+  background: url("../../images/pattern.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: rem(650px);
   color: #fff;
   position: relative;
-  
-  &:before, &:after {
-    @include tablets{
-    display: none;
-} 
-}
-  
 
-  &:before {
+  @include tablets {
+    background-position: right bottom 88%;
+  }
+
+  &:after {
     position: absolute;
     right: 10%;
     top: 59%;
    content: url("/images/group.svg"); 
   }
 
-    &:after {
+    &::before {
     content: url("/images/icons/leaf3.svg");
     bottom: -10%;
     left: 5%;
     position: absolute;
     
   }
-  
+  &:before, &:after {
+    @include tablets{
+    display: none;
+} 
+}
 }
 .hero__container{
+  background:  url("../../images/sweets.png") left 87% center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,7 +40,10 @@
 
   @include tablets{
     background: none;
+    
   }
+
+  
 }
 .hero__main-title{
   font-size: rem(48px);
@@ -47,11 +52,18 @@
   margin-bottom: rem(15px);
   text-transform: uppercase;
 }
+
 .hero__title-desc{
   font-size: rem(21px);
   margin-bottom: rem(28px);
   padding-right: 10%;
-
+  
+  @include tablets{
+    padding: 0 16%;
+  }
+  @include phones {
+    padding: 0  16%;
+  }
 }
 .hero__title-section {
   width: 46%;
@@ -66,10 +78,15 @@
     text-align: center;
 
     &:before{
-      content: url("/images/icons/comp.png");
+      content:""; 
+      width: rem(316px);
+      height: rem(330px);
+      background:url("/images/icons/comp.png") center center / contain no-repeat;
+      margin-bottom: rem(16px);
     }
 }
 }
+
 .hero__icons-section{
   @include tablets{
     display: none;

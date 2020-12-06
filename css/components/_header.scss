@@ -5,22 +5,14 @@
 }
 
 
-.phone-number{
-  font-size: rem(24px);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-
-}
-.phone-number__icon-elem{
-  width: rem(12px);
-  height: rem(12px);
-  margin-right: rem(6px);
- 
-}
 
 .phone-number.header__phone-number{
   @include tablets {
     display: none;
+  }
+}
+.header{
+  @include tablets{
+    align-items: flex-start;
   }
 }
