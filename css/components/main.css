@@ -190,6 +190,12 @@ img {
   justify-content: space-between;
 }
 
+.phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
     display: none;
@@ -200,6 +206,13 @@ img {
   .header {
     align-items: flex-start;
   }
+}
+
+.phone-number__icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 10px;
 }
 
 .hamburger {
@@ -244,12 +257,15 @@ img {
 .menu__list {
   display: flex;
   align-items: center;
-}
-
-.menu__list {
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -10px;
+}
+@media screen and (max-width: 768px) {
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+  }
 }
 
 .menu__item {
@@ -851,9 +867,32 @@ img {
 .footer__icons-item {
   margin-right: 0.7777777778rem;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill: #B3B3B3;
 }
 .footer__icons-item:last-child {
   margin-right: 0;
+}
+
+.phone-number__icon .number__under {
+  width: 24px;
+  height: 24px;
+  fill: black;
+  margin-right: 7px;
+}
+
+.icon_svg {
+  fill: #497870;
+}
+
+.phone-number__green {
+  color: #497870;
+}
+
+.phone-number {
+  display: flex;
+  justify-content: start;
 }
 
 .contacts {

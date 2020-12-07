@@ -32,8 +32,28 @@
 .footer__icons-item{
   margin-right: rem(14px);
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill:#B3B3B3;
 
   &:last-child{
     margin-right: 0;
   }  
+}
+.phone-number__icon .number__under{
+  width: 24px;
+  height: 24px;
+  fill: black;
+  margin-right: 7px;
+}
+.icon_svg{
+  fill: #497870;
+
+}
+.phone-number__green{
+  color:#497870;
+}
+.phone-number{
+  display: flex;
+  justify-content: start;
 }
