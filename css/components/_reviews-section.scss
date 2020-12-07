@@ -13,5 +13,8 @@ position: relative;
   content: url("/images/icons/bar3.svg");
   position: absolute;
   top: 90%;
+
+  @include phones
+
 }
 }

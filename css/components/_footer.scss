@@ -6,9 +6,13 @@
   padding: rem(23px) 0;
   background: #fff;
   height: rem(86px);
-  background-color: cadetblue;
-  
 
+  @include phones{
+    display: flex;
+    align-items: center;
+    
+  }
+  
 }
 .footer__container{
   display: flex;
@@ -22,14 +26,14 @@
 }
 .footer__icons{
   display: flex;
+
+  
 }
 .footer__icons-item{
   margin-right: rem(14px);
+  cursor: pointer;
 
   &:last-child{
     margin-right: 0;
-  }
-  
-  
-  
+  }  
 }

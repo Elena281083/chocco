@@ -3,12 +3,14 @@
 
  @include tablets{
  flex-direction: column;
- padding-right: rem(153px);
- padding-left: rem(147px);
+ padding-right: rem(118px);
+ padding-left: rem(118px);
 }
 
-@include phones{
-  padding: 0;
+  @include phones{
+  // padding: 0;
+  padding-left: rem(30px);
+  padding-right: rem(30px);
 }
 }
 .form__col{

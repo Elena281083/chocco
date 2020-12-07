@@ -1,11 +1,14 @@
 
 .map{
   height: rem(652px);
-  background-size: cover;
-  
   background-repeat: no-repeat;
   width: 100%;
+
+  @include phones{
+    height: rem(410px);
+  }
   
-  
-  
+}
+.img-map{
+  width: 100%;
 }
