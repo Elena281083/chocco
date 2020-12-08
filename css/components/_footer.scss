@@ -21,10 +21,10 @@
     flex-direction: column;
   }
 }
-.footer__socials {
+.socials {
   display: flex;
 }
-.footer__socials-item {
+.socials__item {
   margin-right: rem(14px);
   cursor: pointer;
   width: 23px;

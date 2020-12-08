@@ -1,4 +1,4 @@
-.hero{
+.hero {
   background: url("../../images/pattern.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
@@ -14,38 +14,42 @@
     position: absolute;
     right: 10%;
     top: 59%;
-   content: url("/images/group.svg"); 
+    content: url("/images/group.svg");
+
+    @include tablets {
+      display: none;
+    }
+    @include phones{
+      
+    }
   }
 
-    &::before {
+  &::before {
     content: url("/images/icons/leaf3.svg");
     bottom: -10%;
     left: 5%;
     position: absolute;
-    
   }
-  &:before, &:after {
-    @include tablets{
-    display: none;
-} 
+  &:before,
+  &:after {
+    @include tablets {
+      display: none;
+    }
+  }
 }
-}
-.hero__container{
-  background:  url("../../images/sweets.png") left 87% center no-repeat;
+.hero__container {
+  background: url("../../images/sweets.png") left 87% center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
 
-  @include tablets{
+  @include tablets {
     background: none;
-    
   }
-
-  
 }
-.hero__main-title{
+.hero__main-title {
   font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
@@ -53,22 +57,22 @@
   text-transform: uppercase;
 }
 
-.hero__title-desc{
+.hero__title-desc {
   font-size: rem(21px);
   margin-bottom: rem(28px);
   padding-right: 10%;
-  
-  @include tablets{
+
+  @include tablets {
     padding: 0 16%;
   }
   @include phones {
-    padding: 0  16%;
+    padding: 0 16%;
   }
 }
 .hero__title-section {
   width: 46%;
- 
-  @include tablets{
+
+  @include tablets {
     width: 100%;
     flex: 1;
     display: flex;
@@ -77,18 +81,38 @@
     align-items: center;
     text-align: center;
 
-    &:before{
-      content:""; 
+    &:before {
+      content: "";
       width: rem(316px);
       height: rem(330px);
-      background:url("/images/icons/comp.png") center center / contain no-repeat;
+      background: url("/images/icons/comp.png") center center / contain no-repeat;
       margin-bottom: rem(16px);
     }
-}
+  }
+  @include phones {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: "";
+      width: rem(316px);
+      height: rem(330px);
+      background: url("/images/icons/comp.png") center center / contain no-repeat;
+      margin-bottom: rem(16px);
+    }
+  }
 }
 
-.hero__icons-section{
-  @include tablets{
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+  @include phones {
     display: none;
   }
 }

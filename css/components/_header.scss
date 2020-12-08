@@ -13,12 +13,11 @@
   @include tablets {
     display: none;
   }
+  @include phones {
+    display: none;
 }
-.header {
-  @include tablets {
-    align-items: flex-start;
-  }
 }
+
 .phone-number__icon {
   width: 24px;
   height: 24px;

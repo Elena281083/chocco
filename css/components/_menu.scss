@@ -1,14 +1,11 @@
 .menu{
   @include tablets{
-  margin: 0 30px 0 40px;
-  padding-top: 5px;
   display: none;
+  
 }
- 
-
   @include phones{
     display: none;
-  }
+  }  
 }
 .menu__list{
   display: flex;
@@ -17,40 +14,24 @@
   justify-content: center;
 
     @include tablets{
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -10px;
+    display: none;
 }  
 }
 .menu__item{
   margin-right: rem(27px);
+  margin-top: 10px;
     
     &:last-child{
     margin-right: 0;
-    
   }
-  @include tablets{
-    margin-right: 1.6rem;
-    margin-bottom: 10px;
-  }
-  }
+ }
 .menu__link{
   text-decoration: none;
-
-}
-
-.menu__link{
   white-space: nowrap;
-
 }
-.menu__item{
-    margin-top: 10px;
 
-}
 .phone-number__text{
   white-space: nowrap;
-
-
 }
 .phone-number{
   font-size: rem(24px);
@@ -67,5 +48,4 @@
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
- 
 }
