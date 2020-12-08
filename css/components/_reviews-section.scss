@@ -8,13 +8,27 @@ position: relative;
   top:82%;
   left: -1%;
   background-repeat: no-repeat;
+
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
+
 }
 &:after{
   content: url("/images/icons/bar3.svg");
   position: absolute;
   top: 90%;
 
-  @include phones
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
+  }
 
 }
 }

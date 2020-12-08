@@ -216,12 +216,15 @@ img {
 }
 
 .hamburger {
+  position: fixed;
   width: 24px;
   height: 20px;
   flex-direction: column;
   display: inline-flex;
   justify-content: space-between;
   display: none;
+  top: 5%;
+  left: 93%;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -435,7 +438,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 1.0555555556rem;
+    margin-bottom: 0;
   }
 }
 .benefits__item::before {
@@ -496,7 +499,7 @@ img {
 }
 
 .benefit__image {
-  margin-bottom: 1.0555555556rem;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 480px) {
   .benefit__image {
@@ -517,7 +520,7 @@ img {
   content: url("../../images/icons/mal.svg");
   position: absolute;
   left: -1%;
-  top: 68%;
+  top: 86%;
 }
 @media screen and (max-width: 480px) {
   .benefits-section::before {
@@ -533,7 +536,7 @@ img {
 .reviews__display::before {
   content: url("../../images/icons/bush.svg");
   position: absolute;
-  left: 87%;
+  left: 86%;
 }
 
 .reviews__display-inner {
@@ -550,11 +553,12 @@ img {
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
   .reviews__avatar {
-    width: 130px;
-    height: 132px;
+    width: 7.2222222222rem;
+    height: 7.3333333333rem;
   }
 }
 
@@ -565,8 +569,14 @@ img {
 }
 
 .reviews__content {
+  position: relative;
   flex: 1;
   margin-left: 1.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -583,7 +593,8 @@ img {
 }
 
 .reviews__text {
-  margin-bottom: 2rem;
+  display: block;
+  padding-bottom: 1.2222222222rem;
   width: 25.7222222222rem;
 }
 @media screen and (max-width: 768px) {
@@ -632,11 +643,32 @@ img {
   left: -1%;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .section.reviews-section:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section.reviews-section:before {
+    display: none;
+  }
+}
 .section.reviews-section:after {
   content: url("/images/icons/bar3.svg");
   position: absolute;
   top: 90%;
 }
+@media screen and (max-width: 768px) {
+  .section.reviews-section:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section.reviews-section:after {
+    display: none;
+  }
+}
+
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
@@ -818,19 +850,20 @@ img {
   border-radius: 4px;
 }
 
+.section-map {
+  height: 100vh;
+}
+
 .map {
-  height: 36.2222222222rem;
+  height: 100%;
   background-repeat: no-repeat;
   width: 100%;
-}
-@media screen and (max-width: 480px) {
-  .map {
-    height: 22.7777777778rem;
-  }
 }
 
 .img-map {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -860,22 +893,22 @@ img {
   }
 }
 
-.footer__icons {
+.footer__socials {
   display: flex;
 }
 
-.footer__icons-item {
+.footer__socials-item {
   margin-right: 0.7777777778rem;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
-  fill: #B3B3B3;
+  width: 23px;
+  height: 23px;
+  fill: #b3b3b3;
 }
-.footer__icons-item:last-child {
+.footer__socials-item:last-child {
   margin-right: 0;
 }
 
-.phone-number__icon .number__under {
+.phone-number__socials .number__under {
   width: 24px;
   height: 24px;
   fill: black;
@@ -917,7 +950,6 @@ img {
   position: fixed;
   top: 20%;
   right: 4%;
-  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {

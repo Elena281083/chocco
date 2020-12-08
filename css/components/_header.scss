@@ -1,29 +1,27 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.phone-number{
+.phone-number {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
-.phone-number.header__phone-number{
+.phone-number.header__phone-number {
   @include tablets {
     display: none;
   }
 }
-.header{
-  @include tablets{
+.header {
+  @include tablets {
     align-items: flex-start;
   }
 }
-.phone-number__icon{
+.phone-number__icon {
   width: 24px;
   height: 24px;
   fill: white;
   margin-right: 10px;
-  
 }
