@@ -15,10 +15,13 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
+  
   @include phones {
     flex-direction: column;
+    align-items: center;
+    line-height: rem(17px);
+    margin-top: rem(6px);
   }
 }
 .socials {
@@ -27,33 +30,31 @@
 .socials__item {
   margin-right: rem(14px);
   cursor: pointer;
-  width: 23px;
-  height: 23px;
+  width: rem(23px);
+  height: rem(23px);
   fill: #b3b3b3;
 
-  @include tablets{
-    
-    
-   
+  @include phones{
+    margin-top: rem(-8px);
   }
 
+  
+  .phone-number.number__under {
+    display: flex;
+  
+}
   &:last-child {
     margin-right: 0;
   }
 }
-.phone-number__socials .number__under {
-  width: 24px;
-  height: 24px;
-  fill: black;
-  margin-right: 7px;
-}
+
 .icon_svg {
   fill: #497870;
+  width: rem(24px);
+  height: rem(24px);
+  margin-right: rem(5px);
 }
 .phone-number__green {
   color: #497870;
 }
-.phone-number {
-  display: flex;
-  justify-content: start;
-}
+

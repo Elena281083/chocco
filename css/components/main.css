@@ -221,7 +221,6 @@ img {
 .phone-number {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
@@ -407,7 +406,7 @@ img {
 .section__title {
   font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 3.3333333333rem;
+  margin-bottom: 1.1111111111rem;
   text-align: center;
   text-transform: uppercase;
   text-align: center;
@@ -558,6 +557,7 @@ img {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top: 56px;
   }
 }
 
@@ -895,11 +895,13 @@ img {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 480px) {
   .footer__container {
     flex-direction: column;
+    align-items: center;
+    line-height: 0.9444444444rem;
+    margin-top: 0.3333333333rem;
   }
 }
 
@@ -910,32 +912,31 @@ img {
 .socials__item {
   margin-right: 0.7777777778rem;
   cursor: pointer;
-  width: 23px;
-  height: 23px;
+  width: 1.2777777778rem;
+  height: 1.2777777778rem;
   fill: #b3b3b3;
+}
+@media screen and (max-width: 480px) {
+  .socials__item {
+    margin-top: -0.4444444444rem;
+  }
+}
+.socials__item .phone-number.number__under {
+  display: flex;
 }
 .socials__item:last-child {
   margin-right: 0;
 }
 
-.phone-number__socials .number__under {
-  width: 24px;
-  height: 24px;
-  fill: black;
-  margin-right: 7px;
-}
-
 .icon_svg {
   fill: #497870;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
+  margin-right: 0.2777777778rem;
 }
 
 .phone-number__green {
   color: #497870;
-}
-
-.phone-number {
-  display: flex;
-  justify-content: start;
 }
 
 .contacts {
