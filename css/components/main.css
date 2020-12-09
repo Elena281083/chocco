@@ -124,7 +124,7 @@ img {
 }
 
 .hero__container {
-  background: url("../../images/sweets.png") left 87% center no-repeat;
+  background: url("../../images/sweets.png") left 100% center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -249,7 +249,7 @@ img {
   display: inline-flex;
   justify-content: space-between;
   display: none;
-  top: 5%;
+  top: 3%;
   left: 93%;
 }
 @media screen and (max-width: 768px) {
@@ -344,7 +344,7 @@ img {
 
 .feature__icon {
   width: 2.5rem;
-  margin-right: 0.3888888889rem;
+  margin-right: 0.8333333333rem;
 }
 
 .feature__text {
@@ -515,6 +515,12 @@ img {
   .benefit__image {
     margin-right: 1.1111111111rem;
   }
+}
+
+.benefit__svg {
+  position: absolute;
+  left: 1.6666666667rem;
+  top: 1.5555555556rem;
 }
 
 .benefits-section {
