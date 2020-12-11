@@ -178,7 +178,7 @@ img {
     content: "";
     width: 17.5555555556rem;
     height: 18.3333333333rem;
-    background: url("/images/icons/comp.png") center center/contain no-repeat;
+    background: url("../../images/icons/comp.png") center center/contain no-repeat;
     margin-bottom: 0.8888888889rem;
   }
 }
@@ -536,12 +536,104 @@ img {
   content: url("../../images/icons/mal.svg");
   position: absolute;
   left: -1%;
-  top: 86%;
+  top: 70%;
 }
 @media screen and (max-width: 480px) {
   .benefits-section::before {
     display: none;
   }
+}
+
+.section__slide-section {
+  display: flex;
+  justify-content: center;
+  background-color: #F8FAF9;
+  height: 100vh;
+  min-height: 36.1111111111rem;
+}
+
+.slide__sweets-img-item {
+  display: flex;
+  background: url("/images/sweets-slide/sweets.png") center top -13% no-repeat, url("/images/sweets-slide/elipse-blue.png") center no-repeat, url("/images/sweets-slide/elipse-white.png") center top 75% no-repeat;
+  height: 25rem;
+  width: 55%;
+  margin-right: 5%;
+}
+
+.products {
+  overflow: hidden;
+  display: flex;
+  width: 55.5555555556rem;
+}
+
+.hidden {
+  width: 55.5555555556rem;
+  overflow: hidden;
+}
+
+.container-slide-main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+  align-items: center;
+}
+.container-slide-main:before {
+  position: absolute;
+  content: url("/images/sweets-slide/leaf-left.png");
+  background-repeat: no-repeat;
+  left: 13%;
+  top: 20%;
+}
+.container-slide-main:after {
+  position: absolute;
+  content: url("/images/sweets-slide/leaf-right.png");
+  background-repeat: no-repeat;
+  left: 45%;
+  top: 70%;
+}
+
+.slide__text {
+  width: 40%;
+  margin: 0;
+}
+
+.main-title {
+  font-size: 2rem;
+  color: #000;
+  width: 20.7777777778rem;
+}
+
+.calor__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.3333333333rem;
+}
+.calor__main .calor-price {
+  font-size: 3.3333333333rem;
+}
+
+.green2 {
+  font-size: 1.0555555556rem;
+  font-weight: bold;
+  padding: 0.2777777778rem 1.9444444444rem;
+  text-transform: uppercase;
+  border-radius: 5.5555555556rem;
+  line-height: 2.5;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  width: 8.6666666667rem;
+  height: 3.3333333333rem;
+}
+
+.product__item.product {
+  display: flex;
+  position: relative;
+  width: 55.5555555556rem;
+  right: 0;
 }
 
 .reviews__display {

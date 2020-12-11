@@ -1,0 +1,96 @@
+
+.section__slide-section{
+  display: flex;
+  justify-content: center;
+  background-color: #F8FAF9;
+  height: 100vh;
+  min-height: 36.1111111111rem;
+
+ 
+}
+.slide__sweets-img-item{
+  display: flex;
+  background: url("/images/sweets-slide/sweets.png") center top -13% no-repeat, 
+  url("/images/sweets-slide/elipse-blue.png") center no-repeat,
+  url("/images/sweets-slide/elipse-white.png") center top 75% no-repeat;
+  height: rem(450px);
+  width: 55%;
+  margin-right: 5%;
+ 
+}
+.products{
+  overflow: hidden;
+  display: flex;
+  width: rem(1000px);
+  
+}
+.hidden{
+  width: rem(1000px);
+  overflow: hidden;
+  
+}
+.container-slide-main{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+  align-items: center;
+ 
+  &:before {
+    position: absolute;
+    content: url("/images/sweets-slide/leaf-left.png"); 
+    background-repeat: no-repeat;
+    left: 13%;
+    top: 20%;
+  }
+    
+    &:after {
+    position: absolute;
+    content: url("/images/sweets-slide/leaf-right.png");
+    background-repeat: no-repeat;
+    left: 45%;
+    top: 70%;    
+}
+    
+}
+.slide__text{
+  width: 40%;
+  margin: 0;
+
+}
+
+.main-title{
+  font-size: rem(36px);
+  color: #000;
+  width: rem(374px);
+}
+.calor__main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(366px);
+  
+.calor-price{
+  font-size: rem(60px);
+}
+}
+.green2{
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(5px) rem(35px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 2.5; 
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  width: rem(156px);
+  height: rem(60px);
+}
+.product__item.product{
+  display: flex;
+  position: relative;
+  width: rem(1000px);
+  right: 0;
+}
