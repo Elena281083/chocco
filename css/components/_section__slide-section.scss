@@ -14,26 +14,22 @@
   url("/images/sweets-slide/elipse-blue.png") center no-repeat,
   url("/images/sweets-slide/elipse-white.png") center top 75% no-repeat;
   height: rem(450px);
-  width: 55%;
-  margin-right: 5%;
- 
+  width: 50%;
 }
 .products{
-  overflow: hidden;
   display: flex;
   width: rem(1000px);
   
 }
 .hidden{
-  width: rem(1000px);
-  overflow: hidden;
+  width: 100%;
   
 }
 .container-slide-main{
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 90%;
+  width: 100%;
   align-items: center;
  
   &:before {
@@ -43,7 +39,6 @@
     left: 13%;
     top: 20%;
   }
-    
     &:after {
     position: absolute;
     content: url("/images/sweets-slide/leaf-right.png");
@@ -51,12 +46,14 @@
     left: 45%;
     top: 70%;    
 }
-    
+}
+.slider{
+  position: relative;
+  // overflow: hidden;
 }
 .slide__text{
-  width: 40%;
+  width: 50%;
   margin: 0;
-
 }
 
 .main-title{
@@ -88,9 +85,49 @@
   width: rem(156px);
   height: rem(60px);
 }
-.product__item.product{
+.product__item{
   display: flex;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+
+}
+.ingredients{
+  width: rem(91px);
+  height: rem(91px);
+  background-color: #86C3D7;
   position: relative;
-  width: rem(1000px);
-  right: 0;
+  border-radius: rem(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ingredients:hover .composition{
+  opacity: 1;
+  left: 100%;
+
+}
+.composition{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: -9999px;
+  width: 16.875rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: rem(4px);
+
+}
+.composition__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: rem(28px) rem(26px);
+}
+  
+.composition__text{
+  display: flex;
+  justify-content: start;
+  width: 50%;
 }

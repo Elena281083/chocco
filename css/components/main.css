@@ -556,26 +556,23 @@ img {
   display: flex;
   background: url("/images/sweets-slide/sweets.png") center top -13% no-repeat, url("/images/sweets-slide/elipse-blue.png") center no-repeat, url("/images/sweets-slide/elipse-white.png") center top 75% no-repeat;
   height: 25rem;
-  width: 55%;
-  margin-right: 5%;
+  width: 50%;
 }
 
 .products {
-  overflow: hidden;
   display: flex;
   width: 55.5555555556rem;
 }
 
 .hidden {
-  width: 55.5555555556rem;
-  overflow: hidden;
+  width: 100%;
 }
 
 .container-slide-main {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 90%;
+  width: 100%;
   align-items: center;
 }
 .container-slide-main:before {
@@ -593,8 +590,12 @@ img {
   top: 70%;
 }
 
+.slider {
+  position: relative;
+}
+
 .slide__text {
-  width: 40%;
+  width: 50%;
   margin: 0;
 }
 
@@ -629,11 +630,52 @@ img {
   height: 3.3333333333rem;
 }
 
-.product__item.product {
+.product__item {
   display: flex;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.ingredients {
+  width: 5.0555555556rem;
+  height: 5.0555555556rem;
+  background-color: #86C3D7;
   position: relative;
-  width: 55.5555555556rem;
-  right: 0;
+  border-radius: 0.2222222222rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ingredients:hover .composition {
+  opacity: 1;
+  left: 100%;
+}
+
+.composition {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: -9999px;
+  width: 16.875rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.2222222222rem;
+}
+
+.composition__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5555555556rem 1.4444444444rem;
+}
+
+.composition__text {
+  display: flex;
+  justify-content: start;
+  width: 50%;
 }
 
 .reviews__display {
